@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://dotslashcahighlighttab/locale/highlighttab.dtd">
+
+<overlay id="dotslashca_highlightTabOverlay" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	 <script language="javascript"  src="chrome://dotslashcahighlighttab/content/highlighttabOverlay.js"/>
+
+
+	 <popup id="tabContextMenu" >
+	 	<menu id="dotslashca_highlightTabMenu" label="Highlight Tab" position="3">
+	             <!-- menuitem id="highlightTabMenuItem" label="ZZZZ" oncommand="highlighttab.toggleHighlight(event, popupNode)"/ -->
+		     <!--menuitem label="XXXXX" id="lkjfksljdf" oncommand="highlighttab.highlightTab(event, popupNode, 'highlightTabColour');" >
+			<colorpicker id="highlightTabColour" onchange="alert(this.color)" color="#112233"/>
+		     </menuitem-->
+		     <menupopup>	
+		     	<menuitem id="dotslashca_highlightColorRed" oncommand="highlighttab.highlightTab(event, popupNode, 'red')" label="Red" style="background-color:red; -moz-appearance: none !important; " />
+			<menuitem id="dotslashca_highlightColorOrange" oncommand="highlighttab.highlightTab(event, popupNode, '#ff6200')" label="Orange" style="background-color:#ff6200; -moz-appearance: none !important; " />
+		     	<menuitem id="dotslashca_highlightColorYellow" oncommand="highlighttab.highlightTab(event, popupNode, 'yellow')" label="Yellow" style="background-color:yellow !important; ; -moz-appearance: none !important;" />
+		        <menuitem id="dotslashca_highlightColorGreen" oncommand="highlighttab.highlightTab(event, popupNode, '#72ff47')" label="Green" style="background-color:#72ff47; -moz-appearance: none !important; " />
+			<menuitem id="dotslashca_highlightColorBlue" oncommand="highlighttab.highlightTab(event, popupNode, '#00a6ff')" label="Blue" style="background-color:#00a6ff; -moz-appearance: none !important; " />
+			<menuitem id="dotslashca_highlightColorPink" oncommand="highlighttab.highlightTab(event, popupNode, '#ff6dff')" label="Pink" style="background-color:#ff6dff; -moz-appearance: none !important; " />
+
+
+			<menuitem id="dotslashca_highlightColorNone" oncommand="highlighttab.highlightTab(event, popupNode, '')" label="None" />
+
+		     </menupopup>
+		 </menu>
+	</popup>
+
+</overlay>

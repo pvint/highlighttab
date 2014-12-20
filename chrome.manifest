@@ -1,0 +1,6 @@
+content dotslashcahighlighttab		chrome/content/
+skin	dotslashcahighlighttab		skin/
+locale	dotslashcahighlighttab	en-US	locale/en-US/
+
+overlay chrome://browser/content/browser.xul chrome://dotslashcahighlighttab/content/browserOverlay.xul
+
