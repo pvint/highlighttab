@@ -1,1 +1,8 @@
-<!ENTITY HighlightTab.label "Highlight Tab">
+<!ENTITY highlightTab.label "Highlight Tab">
+<!ENTITY highlightTab.Red	"Red">
+<!ENTITY highlightTab.Orange	"Orange">
+<!ENTITY highlightTab.Yellow	"Yellow">
+<!ENTITY highlightTab.Green	"Green">
+<!ENTITY highlightTab.Blue	"Blue">
+<!ENTITY highlightTab.Pink	"Pink">
+<!ENTITY highlightTab.None	"None">

@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>highlighttab@dotslash.ca</em:id>
-    <em:version>1.0</em:version>
+    <em:version>1.1</em:version>
     <em:type>2</em:type>
    
     <!-- Target Application this extension can install into, 
@@ -19,6 +19,11 @@
     </em:targetApplication>
    
     <!-- Front End MetaData -->
+    <em:localized>
+    	<em:locale>fr-CA</em:locale>
+	<em:name>Surlinger cet Onglet</em:name>
+	<em:description>Onglets de surbrillance avec des couleurs différentes.</em:description>
+    </em:localized>
     <em:name>Highlight Tab</em:name>
     <em:description>Highlight browser tabs with different colours.</em:description>
     <em:creator>Paul Vint</em:creator>
