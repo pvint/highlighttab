@@ -6,15 +6,18 @@ if ("undefined" == typeof(highlighttab)) {
 };
 
 var highlighttab = {
-	        toggleHighlight: function(aEvent, node) {
-					  alert(aEvent);
-					  alert(node.label);
-					  node.style.background = "red";
-					  //x.style.background = 'red';
-				  },
 
 		highlightTab: function(evt, node, c) {
-				      node.style.background = c;
+				      if( c == '' )
+				      {
+					      node.style.background = '';
+					      node.style.borderBottom = '';
+				      }
+				      else
+				      {
+					      node.style.background = c;
+					      node.style.borderBottom = '2px solid ' + c;
+					}
 			      }
 };
 
