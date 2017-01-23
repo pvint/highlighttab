@@ -11,20 +11,46 @@
 
 	 <popup id="tabContextMenu" >
 	 	<menu id="dotslashca_highlightTabMenu" label="&highlightTab.label;" position="3">
-	             <!-- menuitem id="highlightTabMenuItem" label="ZZZZ" oncommand="highlighttab.toggleHighlight(event, popupNode)"/ -->
-		     <!--menuitem label="XXXXX" id="lkjfksljdf" oncommand="highlighttab.highlightTab(event, popupNode, 'highlightTabColour');" >
-			<colorpicker id="highlightTabColour" onchange="alert(this.color)" color="#112233"/>
-		     </menuitem-->
 		     <menupopup>	
-		     	<menuitem id="dotslashca_highlightColorRed" oncommand="highlighttab.highlightTab(event, popupNode, 'red')" label="&highlightTab.Red;" style="background-color:red; -moz-appearance: none !important; " />
-			<menuitem id="dotslashca_highlightColorOrange" oncommand="highlighttab.highlightTab(event, popupNode, '#ff6200')" label="&highlightTab.Orange;" style="background-color:#ff6200; -moz-appearance: none !important; " />
-		     	<menuitem id="dotslashca_highlightColorYellow" oncommand="highlighttab.highlightTab(event, popupNode, 'yellow')" label="&highlightTab.Yellow;" style="background-color:yellow !important; ; -moz-appearance: none !important;" />
-		        <menuitem id="dotslashca_highlightColorGreen" oncommand="highlighttab.highlightTab(event, popupNode, '#72ff47')" label="&highlightTab.Green;" style="background-color:#72ff47; -moz-appearance: none !important; " />
-			<menuitem id="dotslashca_highlightColorBlue" oncommand="highlighttab.highlightTab(event, popupNode, '#00a6ff')" label="&highlightTab.Blue;" style="background-color:#00a6ff; -moz-appearance: none !important; " />
-			<menuitem id="dotslashca_highlightColorPink" oncommand="highlighttab.highlightTab(event, popupNode, '#ff6dff')" label="&highlightTab.Pink;" style="background-color:#ff6dff; -moz-appearance: none !important; " />
+		     	<grid>
+				<columns>
+					<column />
+					<column />
+				</columns>
+				<rows>
+					<row>
+						<menuitem id="dotslashca_highlightColorRed" oncommand="highlighttab.highlightTab(event, popupNode, 'red')" label="" style="background-color:red; -moz-appearance: none !important; " />
+						<menuitem id="dotslashca_highlightColorLRed" oncommand="highlighttab.highlightTab(event, popupNode, '#ff8888')" label="" style="background-color:#ff8888; -moz-appearance: none !important; " />
+					</row>
+					<row>
+						<menuitem id="dotslashca_highlightColorOrange" oncommand="highlighttab.highlightTab(event, popupNode, '#ff8800')" label="" style="background-color:#ff8800 !important; ; -moz-appearance: none !important;" />
+						<menuitem id="dotslashca_highlightColorLOrange" oncommand="highlighttab.highlightTab(event, popupNode, '#ffbb66')" label="" style="background-color:#ffbb66; -moz-appearance: none !important; " />
+					</row>
+					<row>
+						<menuitem id="dotslashca_highlightColorYellow" oncommand="highlighttab.highlightTab(event, popupNode, '#ffff00')" label="" style="background-color:#ffff00 !important; ; -moz-appearance: none !important;" />
+						<menuitem id="dotslashca_highlightColorLYellow" oncommand="highlighttab.highlightTab(event, popupNode, '#ffffa8')" label="" style="background-color:#ffffa8; -moz-appearance: none !important; " />
+					</row>
+					<row>
+						<menuitem id="dotslashca_highlightColorGreen" oncommand="highlighttab.highlightTab(event, popupNode, '#00ff00')" label="" style="background-color:#00ff00 !important; ; -moz-appearance: none !important;" />
+						<menuitem id="dotslashca_highlightColorLGreen" oncommand="highlighttab.highlightTab(event, popupNode, '#66ff66')" label="" style="background-color:#66ff66; -moz-appearance: none !important; " />
+					</row>
+					<row>
+						<menuitem id="dotslashca_highlightColorBlue" oncommand="highlighttab.highlightTab(event, popupNode, '#3333ff')" label="" style="background-color:#3333ff !important; ; -moz-appearance: none !important;" />
+						<menuitem id="dotslashca_highlightColorLBlue" oncommand="highlighttab.highlightTab(event, popupNode, '#8888ff')" label="" style="background-color:#aaccff; -moz-appearance: none !important; " />
+					</row>
+					<row>
+						<menuitem id="dotslashca_highlightColorIndigo" oncommand="highlighttab.highlightTab(event, popupNode, '#00ffff')" label="" style="background-color:#00ffff !important; ; -moz-appearance: none !important;" />
+						<menuitem id="dotslashca_highlightColorLIndigo" oncommand="highlighttab.highlightTab(event, popupNode, '#aaffff')" label="" style="background-color:#aaffff; -moz-appearance: none !important; " />
+					</row>
+					<row>
+						<menuitem id="dotslashca_highlightColorViolet" oncommand="highlighttab.highlightTab(event, popupNode, '#ff00ff')" label="" style="background-color:#ff00ff !important; ; -moz-appearance: none !important;" />
+						<menuitem id="dotslashca_highlightColorLViolet" oncommand="highlighttab.highlightTab(event, popupNode, '#ffaaff')" label="" style="background-color:#ffaaff; -moz-appearance: none !important; " />
+					</row>
 
-
-			<menuitem id="dotslashca_highlightColorNone" oncommand="highlighttab.highlightTab(event, popupNode, '')" label="&highlightTab.None;" />
+					<menuitem id="dotslashca_highlightColorNone" oncommand="highlighttab.highlightTab(event, popupNode, '')" label="&highlightTab.None;" />
+					
+				</rows>
+			</grid>
 
 		     </menupopup>
 		 </menu>

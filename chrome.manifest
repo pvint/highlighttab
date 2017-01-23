@@ -1,5 +1,5 @@
 content dotslashcahighlighttab		chrome/content/
-skin	dotslashcahighlighttab		skin/
+skin   dotslashcahighlighttab          skin/
 locale	dotslashcahighlighttab	en-US	chrome/locale/en-US/
 locale	dotslashcahighlighttab	fr-CA	chrome/locale/fr-CA/
 
